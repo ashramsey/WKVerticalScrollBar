@@ -60,7 +60,7 @@
 - (void)commonInit
 {
     _handleWidth = 5.0f;
-    _handleSelectedWidth = 15.0f;
+    _handleSelectedWidth = 5.0f;
     _handleHitWidth = 44.0f;
     _handleMinimumHeight = 70.0f;
     
@@ -69,7 +69,7 @@
     
     handleHitArea = CGRectZero;
     
-    normalColor = [[UIColor orangeColor] retain];
+    normalColor = [[UIColor colorWithRed:(238/255.0f) green:(56/255.0f) blue:0.0f alpha:1.0f] retain];
     selectedColor = [[UIColor colorWithRed:(238/255.0f) green:(56/255.0f) blue:0.0f alpha:1.0f] retain];
     
     handle = [[CALayer alloc] init];
